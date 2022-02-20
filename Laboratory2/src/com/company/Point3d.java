@@ -51,9 +51,7 @@ public class Point3d{
         double y = this.yCoord;
         double z = this.zCoord;
 
-        double eq = Math.sqrt(Math.pow((x2-x), 2) +
-                Math.pow((y2-y), 2) +
-                Math.pow((z2-z), 2));
+        double eq = Math.sqrt(Math.pow((x2-x), 2) + Math.pow((y2-y), 2) + Math.pow((z2-z), 2));
         return eq;
     }
 
