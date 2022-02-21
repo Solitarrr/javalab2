@@ -5,14 +5,14 @@ public class Point3d{
     private double yCoord; //Координаты Y
     private double zCoord; //Координаты Z
     //Конструктор инициализации
-    public Point3d (double x, double y, double z){//конструктор по умолчанию
+    public Point3d (double x, double y, double z){
         xCoord = x;
         yCoord = y;
         zCoord = z;
     }
     //Конструктор по умолчанию
     public Point3d(){
-        //Вызов конструктора с двумя параметрами и определение источника
+        //Вызов конструктора с тремя параметрами и определение источника
         this(0.0, 0.0, 0.0);
     }
     //Тут берутся значения
@@ -54,7 +54,7 @@ public class Point3d{
         double eq = Math.sqrt(Math.pow((x2-x), 2) + Math.pow((y2-y), 2) + Math.pow((z2-z), 2));
         return eq;
     }
-
+    //Метод проверки значений на равенство
     public static boolean equalsPoints (Point3d p, Point3d p2){
         double x = p.getX();
         double y = p.getY();

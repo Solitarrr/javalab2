@@ -41,7 +41,7 @@ public class Point2d{
         double eq = Math.sqrt(Math.pow((x2-x), 2) + Math.pow((y2-y), 2));
         return eq;
     }
-
+    //Метод проверки значений на равенство
     public static boolean equalsPoints (Point2d p, Point2d p2){
         double x = p.getX();
         double y = p.getY();
